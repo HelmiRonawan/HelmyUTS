@@ -9,10 +9,15 @@ cout<<"Aplikasi Tampilan Menu"<<"\n";
 cout<<"1. Menu Pertama"<<"\n";            
 cout<<"2. Menu Kedua"<<"\n";            
 cout<<"3. Menu Ketiga"<<"\n";           
-cout<<"4. Menu Keempat"<<"\n";            
+cout<<"4. Informasi"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
 
+}
+void info(){
+  system("cls");
+  cout<<"Indonesia Hebat, Poliban Juara";
+  getch();
 }
 
 void mPertama(string pesan){
@@ -43,7 +48,7 @@ do
     /* code */
     break;  
    case '4':
-    mPertama("ke- empat");
+    info();
     /* code */
     break;  
   case '5':
