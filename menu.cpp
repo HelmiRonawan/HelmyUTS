@@ -8,7 +8,7 @@ void dMenu(){
 system("cls");
 cout<<"Aplikasi Tampilan Menu"<<"\n";       
 cout<<"1. Masukkan Nilai"<<"\n";            
-cout<<"2. Menu Kedua"<<"\n";            
+cout<<"2. Keluaran Nilai"<<"\n";            
 cout<<"3. Menu Ketiga"<<"\n";           
 cout<<"4. Informasi"<<"\n";            
 cout<<"5. Exit"<<"\n";           
@@ -24,6 +24,16 @@ void inputNilai(){
       cin >> nilai[i];
     }
     getch();
+}
+
+void outputNilai(int nilai[]){
+  system("cls");
+  cout << "==Nilai Yang Telah Anda Masukkan==" << endl;
+  cout << "Nilainya adalah: ";
+  for(int i = 0; i < n ; i++){
+    cout << nilai[i] << " ";
+  }
+  getch();
 }
 
 void info(){
@@ -53,7 +63,7 @@ do
     inputNilai();
     break;
    case '2':
-    mPertama("ke- dua");
+    outputNilai(nilai);
     /* code */ 
     break;  
    case '3':
